@@ -132,6 +132,8 @@ $('#yes').click(function() {
 
 function EndQuestion(){
     $('.content').hide();
+    var audio = new Audio('nhac/Tieng-cuoi-troll.mp3');
+    audio.play();        
     Swal.fire({
         title: CONFIG.tin_nguoi,
         imageUrl: 'https://1.bp.blogspot.com/-FSsEEg7eesE/Xqhbk_TXrRI/AAAAAAAABm4/MFqHiGuKr3g3_nI4gKJGwQvapKzI98hFQCPcBGAYYCw/s800/BG.png',
