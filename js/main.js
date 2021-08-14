@@ -107,7 +107,6 @@ $('#yes').click(function() {
         background: '#000',
         backdrop: `
               rgba(0,0,123,0.4)
-              url("img/loading_image1.gif")
               left top
               no-repeat
             `,
