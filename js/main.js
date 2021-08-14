@@ -107,7 +107,7 @@ $('#yes').click(function() {
         background: '#000',
         backdrop: `
               rgba(0,0,123,0.4)
-              url("https://1.bp.blogspot.com/-tn9NBLZxjhs/X6vyMHwqAII/AAAAAAAADLA/vrqYGb6BbAcy1-v6FWXiSc-PVBdEBR4lgCLcBGAsYHQ/s0/loading_image.gif")
+              url("img/loading.gif")
               left top
               no-repeat
             `,
