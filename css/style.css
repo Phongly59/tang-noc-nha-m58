@@ -43,24 +43,29 @@
 }
 
 header h2 {
+  color: greenyellow;		
   font-family: 'Alex Brush';
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 header h4 {
+  color: greenyellow;	
   font-family: 'Alex Brush';
   text-align: center;
+  font-size: 30px;	
 }
 
 @media only screen and (max-width: 500px) {
   header h2 {
+    color: greenyellow;	  
     font-family: 'Alex Brush';
     font-size: 45px;
     text-align: center;
     margin-bottom: 30px;
   }
   header h4 {
+    color: greenyellow;	  
     font-family: 'Alex Brush';
     text-align: center;
     padding: 15px;
