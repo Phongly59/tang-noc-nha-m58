@@ -22,10 +22,10 @@ function firstQuestion(){
     Swal.fire({
         title: CONFIG.introTitle,
         text: CONFIG.introDesc,
-        imageUrl: 'img/lookMe.jpg',
+        imageUrl: 'https://1.bp.blogspot.com/-FSsEEg7eesE/Xqhbk_TXrRI/AAAAAAAABm4/MFqHiGuKr3g3_nI4gKJGwQvapKzI98hFQCPcBGAYYCw/s800/BG.png',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#fff url("https://1.bp.blogspot.com/-FSsEEg7eesE/Xqhbk_TXrRI/AAAAAAAABm4/MFqHiGuKr3g3_nI4gKJGwQvapKzI98hFQCPcBGAYYCw/s800/BG.png")',
+        background: '#fff url("img/iput-bg.jpg")',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
