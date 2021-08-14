@@ -25,7 +25,7 @@ function firstQuestion(){
         imageUrl: 'https://1.bp.blogspot.com/-FSsEEg7eesE/Xqhbk_TXrRI/AAAAAAAABm4/MFqHiGuKr3g3_nI4gKJGwQvapKzI98hFQCPcBGAYYCw/s800/BG.png',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#000',
+        background: 'linear-gradient(to bottom right, purple, pink)',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
@@ -104,7 +104,7 @@ $('#yes').click(function() {
         width: 900,
         padding: '3em',
         html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Tại sao nè!'>",
-        background: '#000',
+        background: 'linear-gradient(to bottom right, purple, pink)',
         backdrop: `
               rgba(0,0,123,0.4)
               left top
@@ -118,7 +118,7 @@ $('#yes').click(function() {
             Swal.fire({
                 width: 900,
                 confirmButtonText: CONFIG.btnAccept,
-                background: '#000',
+                background: 'linear-gradient(to bottom right, purple, pink)',
                 title: CONFIG.mess,
                 text: CONFIG.messDesc,
                 confirmButtonColor: '#83d0c9',
@@ -137,7 +137,7 @@ function EndQuestion(){
         imageUrl: 'https://1.bp.blogspot.com/-FSsEEg7eesE/Xqhbk_TXrRI/AAAAAAAABm4/MFqHiGuKr3g3_nI4gKJGwQvapKzI98hFQCPcBGAYYCw/s800/BG.png',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#000',
+        background: 'linear-gradient(to bottom right, purple, pink)',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnvay_thoi,
         onClose: () => {
@@ -153,7 +153,7 @@ function Co_cai_nit(){
         imageUrl: 'https://1.bp.blogspot.com/-FSsEEg7eesE/Xqhbk_TXrRI/AAAAAAAABm4/MFqHiGuKr3g3_nI4gKJGwQvapKzI98hFQCPcBGAYYCw/s800/BG.png',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#000',
+        background: 'linear-gradient(to bottom right, purple, pink)',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnco_cai_nit,
         onClose: () => {
