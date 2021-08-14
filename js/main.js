@@ -1,4 +1,4 @@
-$(document).ready(function() {
+      		$(document).ready(function() {
     // process bar
     setTimeout(function() {
         firstQuestion();
@@ -25,7 +25,7 @@ function firstQuestion(){
         imageUrl: 'https://1.bp.blogspot.com/-FSsEEg7eesE/Xqhbk_TXrRI/AAAAAAAABm4/MFqHiGuKr3g3_nI4gKJGwQvapKzI98hFQCPcBGAYYCw/s800/BG.png',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#fff url("img/iput-bg.jpg")',
+        background: '#fff url("https://huypham9205.github.io/tang-crush/img/iput-bg.jpg")',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
@@ -96,7 +96,7 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-    var audio = new Audio('sound/tick.mp3');
+    var audio = new Audio('https://huypham9205.github.io/tang-crush/sound/tick.mp3');
     audio.play();
     Swal.fire({
         title: CONFIG.question,
@@ -107,7 +107,7 @@ $('#yes').click(function() {
         background: '#fff url("https://huypham9205.github.io/tang-crush/img/iput-bg.jpg")',
         backdrop: `
               rgba(0,0,123,0.4)
-              url("https://huypham9205.github.io/tang-crush/img/giphy2.gif")
+              url("img/giphy2.gif")
               left top
               no-repeat
             `,
