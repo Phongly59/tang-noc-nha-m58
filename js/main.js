@@ -132,7 +132,7 @@ $('#yes').click(function() {
 
 function EndQuestion(){
     $('.content').hide();
-    var audio = new Audio('nhac/Tieng-cuoi-troll.mp3');
+    var audio = new Audio('nhac/Tieng-cuoi.mp3');
     audio.play();        
     Swal.fire({
         title: CONFIG.tin_nguoi,
