@@ -1,4 +1,4 @@
-      		$(document).ready(function() {
+            $(document).ready(function() {
     // process bar
     setTimeout(function() {
         firstQuestion();
@@ -35,7 +35,7 @@ function firstQuestion(){
 
  // switch button position
  function switchButton() {
-    var audio = new Audio('https://huypham9205.github.io/tang-crush/sound/duck.mp3');
+    var audio = new Audio('nhac/duck.mp3');
     audio.play();
     var leftNo = $('#no').css("left");
     var topNO = $('#no').css("top");
@@ -48,7 +48,7 @@ function firstQuestion(){
 }
 // move random button póition
 function moveButton() {
-    var audio = new Audio('https://huypham9205.github.io/tang-crush/sound/Swish1.mp3');
+    var audio = new Audio('nhac/Swish1.mp3');
     audio.play();
     var x = Math.random() * ($(window).width() - $('#no').width()) * 0.9 ;
     var y = Math.random() * ($(window).height() - $('#no').height()) * 0.9;
@@ -96,7 +96,7 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-    var audio = new Audio('https://huypham9205.github.io/tang-crush/sound/tick.mp3');
+    var audio = new Audio('nhac/tick.mp3');
     audio.play();
     Swal.fire({
         title: CONFIG.question,
@@ -107,7 +107,7 @@ $('#yes').click(function() {
         background: '#000',
         backdrop: `
               rgba(0,0,123,0.4)
-              url("img/giphy2.gif")
+              url("https://1.bp.blogspot.com/-tn9NBLZxjhs/X6vyMHwqAII/AAAAAAAADLA/vrqYGb6BbAcy1-v6FWXiSc-PVBdEBR4lgCLcBGAsYHQ/s0/loading_image.gif")
               left top
               no-repeat
             `,
@@ -118,38 +118,47 @@ $('#yes').click(function() {
         if (result.value) {
             Swal.fire({
                 width: 900,
+                confirmButtonText: CONFIG.btnAccept,
                 background: '#000',
                 title: CONFIG.mess,
-                text: CONFIG.messDesc,                    
-                confirmButtonColor: '#83d0c9', 
-                confirmButtonText: CONFIG.btnAccept  
-            }).then((result) => {
-        if (result.value) {
-            Swal.fire({
-                width: 900,
-                confirmButtonText: CONFIG.btnvay_thoi,
-                background: '#000',
-                title: CONFIG.tin_nguoi,                    
+                text: CONFIG.messDesc,
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
-                    window.location = CONFIG.messLink;
-                          }
-                      })
-                    }
-                }).then((result) => {
-        if (result.value) {
-            Swal.fire({
-                width: 900,
-                confirmButtonText: CONFIG.btnco_cai_nit,
-                background: '#000',
-                title: CONFIG.dua_day,                    
-                confirmButtonColor: '#83d0c9',
-                onClose: () => {
-                    window.location = CONFIG.messLink;
-                          }
-                      })
-                    }
-                })
+                    EndQuestion();
+                  }
+            })
         }
     })
 })
+
+function EndQuestion(){
+    $('.content').hide();
+    Swal.fire({
+        title: CONFIG.tin_nguoi,
+        imageUrl: 'https://1.bp.blogspot.com/-FSsEEg7eesE/Xqhbk_TXrRI/AAAAAAAABm4/MFqHiGuKr3g3_nI4gKJGwQvapKzI98hFQCPcBGAYYCw/s800/BG.png',
+        imageWidth: 300,
+        imageHeight: 300,
+        background: '#000',
+        imageAlt: 'Custom image',
+        confirmButtonText: CONFIG.btnvay_thoi,
+        onClose: () => {
+                    Co_cai_nit();
+                  }
+      })
+}
+
+function Co_cai_nit(){
+    $('.content').hide();
+    Swal.fire({
+        title: CONFIG.dua_day,
+        imageUrl: 'https://1.bp.blogspot.com/-FSsEEg7eesE/Xqhbk_TXrRI/AAAAAAAABm4/MFqHiGuKr3g3_nI4gKJGwQvapKzI98hFQCPcBGAYYCw/s800/BG.png',
+        imageWidth: 300,
+        imageHeight: 300,
+        background: '#000',
+        imageAlt: 'Custom image',
+        confirmButtonText: CONFIG.btnco_cai_nit,
+        onClose: () => {
+                    window.location = CONFIG.trang_chu;
+                  }
+      })
+}
