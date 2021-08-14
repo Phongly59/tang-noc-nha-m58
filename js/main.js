@@ -25,7 +25,7 @@ function firstQuestion(){
         imageUrl: 'https://1.bp.blogspot.com/-FSsEEg7eesE/Xqhbk_TXrRI/AAAAAAAABm4/MFqHiGuKr3g3_nI4gKJGwQvapKzI98hFQCPcBGAYYCw/s800/BG.png',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#fff url("https://huypham9205.github.io/tang-crush/img/iput-bg.jpg")',
+        background: '#000',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
@@ -104,7 +104,7 @@ $('#yes').click(function() {
         width: 900,
         padding: '3em',
         html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
-        background: '#fff url("https://huypham9205.github.io/tang-crush/img/iput-bg.jpg")',
+        background: '#000',
         backdrop: `
               rgba(0,0,123,0.4)
               url("img/giphy2.gif")
@@ -118,15 +118,38 @@ $('#yes').click(function() {
         if (result.value) {
             Swal.fire({
                 width: 900,
-                confirmButtonText: CONFIG.btnAccept,
-                background: '#fff url("https://huypham9205.github.io/tang-crush/img/iput-bg.jpg")',
+                background: '#000',
                 title: CONFIG.mess,
-                text: CONFIG.messDesc,
+                text: CONFIG.messDesc,                    
+                confirmButtonColor: '#83d0c9', 
+                confirmButtonText: CONFIG.btnAccept  
+            }).then((result) => {
+        if (result.value) {
+            Swal.fire({
+                width: 900,
+                confirmButtonText: CONFIG.btnvay_thoi,
+                background: '#000',
+                title: CONFIG.tin_nguoi,                    
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
                     window.location = CONFIG.messLink;
-                  }
-            })
+                          }
+                      })
+                    }
+                }).then((result) => {
+        if (result.value) {
+            Swal.fire({
+                width: 900,
+                confirmButtonText: CONFIG.btnco_cai_nit,
+                background: '#000',
+                title: CONFIG.dua_day,                    
+                confirmButtonColor: '#83d0c9',
+                onClose: () => {
+                    window.location = CONFIG.messLink;
+                          }
+                      })
+                    }
+                })
         }
     })
 })
