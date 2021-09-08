@@ -16,5 +16,5 @@ const CONFIG = {
             btnvay_thoi:'ừ :)',
             dua_day:'huhu a đùa mà,đừng giận anh mà :<,nhắn tin điii',
             btnco_cai_nit:'Oke(bé không có giận đâu):))',
-            trang_chu: 'https://www.facebook.com/profie.php?id=100042213502158'
+            trang_chu: 'https://www.facebook.com/profile.php?id=100042213502158'
         	}
